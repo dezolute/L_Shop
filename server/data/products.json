@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Margherita Classica",
+        "description": "Tomato sauce, mozzarella, basil, olive oil.",
+        "price": 7.9,
+        "category": "classic",
+        "available": true,
+        "size": "32cm",
+        "spice": 0
+    }
+]
