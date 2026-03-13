@@ -10,3 +10,13 @@ export interface Product {
   size: string;
   spice: number;
 }
+
+export interface User {
+  id: Id;
+  name: string;
+  email: string;
+  login: string;
+  phone: string;
+  password: string;
+  createdAt: string;
+}
