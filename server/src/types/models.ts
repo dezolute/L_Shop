@@ -20,3 +20,9 @@ export interface User {
   password: string;
   createdAt: string;
 }
+
+export interface Session {
+  id: string;
+  userId: Id;
+  expiresAt: string;
+}
