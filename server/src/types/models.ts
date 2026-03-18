@@ -26,3 +26,24 @@ export interface Session {
   userId: Id;
   expiresAt: string;
 }
+
+export interface BasketItem {
+  productId: Id;
+  quantity: number;
+}
+
+export interface Basket {
+  userId: Id;
+  items: BasketItem[];
+}
+
+export interface BasketViewItem {
+  product: Product;
+  quantity: number;
+}
+
+export interface BasketView {
+  userId: Id;
+  items: BasketViewItem[];
+  total: number;
+}
