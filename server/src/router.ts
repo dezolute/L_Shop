@@ -3,6 +3,8 @@ import { ProductController } from './controllers/products/product.controller';
 import { ProductService } from './services/products/product.service';
 import { BasketController } from './controllers/basket/basket.controller';
 import { BasketService } from './services/basket/basket.service';
+import { UserService } from './services/users/user.service';
+import { UserController } from './controllers/users/user.controller';
 import { SessionService } from './services/sessions/session.service';
 import { attachUser } from './middleware/auth';
 
@@ -20,6 +22,10 @@ export function configureRouter(app: Application) {
 
     const sessionService = new SessionService();
 
+    const userService = new UserService();
+    const userController = new UserController(userService, sessionService);
+
+
     app.use(attachUser(sessionService));
 
     productsRouter.get('/', (req, res) => productController.list(req, res));
@@ -33,6 +39,11 @@ export function configureRouter(app: Application) {
     basketRouter.delete('/items/:productId', (req, res) =>
         basketController.removeItem(req, res),
     );
+
+    userRouter.post('/register', (req, res) => userController.register(req, res));
+    userRouter.post('/login', (req, res) => userController.login(req, res));
+    userRouter.get('/me', (req, res) => userController.me(req, res));
+    userRouter.post('/logout', (req, res) => userController.logout(req, res));
 
     app.use('/users', userRouter);
     app.use('/products', productsRouter);
