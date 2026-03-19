@@ -7,6 +7,9 @@ import { UserService } from './services/users/user.service';
 import { UserController } from './controllers/users/user.controller';
 import { SessionService } from './services/sessions/session.service';
 import { attachUser } from './middleware/auth';
+import { DeliveryController } from './controllers/delivery/delivery.controller';
+import { DeliveryService } from './services/delivery/delivery.service';
+
 
 const userRouter = express.Router();
 const productsRouter = express.Router();
@@ -25,6 +28,12 @@ export function configureRouter(app: Application) {
     const userService = new UserService();
     const userController = new UserController(userService, sessionService);
 
+    const deliveryService = new DeliveryService();
+    const deliveryController = new DeliveryController(
+        deliveryService,
+        basketService,
+        productService,
+    );
 
     app.use(attachUser(sessionService));
 
@@ -44,6 +53,9 @@ export function configureRouter(app: Application) {
     userRouter.post('/login', (req, res) => userController.login(req, res));
     userRouter.get('/me', (req, res) => userController.me(req, res));
     userRouter.post('/logout', (req, res) => userController.logout(req, res));
+
+    deliveryRouter.get('/', (req, res) => deliveryController.list(req, res));
+    deliveryRouter.post('/', (req, res) => deliveryController.create(req, res));
 
     app.use('/users', userRouter);
     app.use('/products', productsRouter);
