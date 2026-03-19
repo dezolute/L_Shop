@@ -47,3 +47,15 @@ export interface BasketView {
   items: BasketViewItem[];
   total: number;
 }
+
+export interface Delivery {
+  id: Id;
+  userId: Id;
+  items: BasketItem[];
+  address: string;
+  phone: string;
+  email: string;
+  paymentMethod: 'card' | 'cash' | 'online';
+  total: number;
+  createdAt: string;
+}
