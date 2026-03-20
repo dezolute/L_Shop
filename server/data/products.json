@@ -7,6 +7,161 @@
         "category": "classic",
         "available": true,
         "size": "32cm",
-        "spice": 0
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 2,
+        "title": "Pepperoni Rosso",
+        "description": "Spicy pepperoni, mozzarella, oregano.",
+        "price": 9.5,
+        "category": "meat",
+        "available": true,
+        "size": "32cm",
+        "spice": 2,
+        "image": ""
+    },
+    {
+        "id": 3,
+        "title": "Quattro Formaggi",
+        "description": "Mozzarella, gorgonzola, parmesan, provolone.",
+        "price": 10.2,
+        "category": "cheese",
+        "available": true,
+        "size": "30cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 4,
+        "title": "Pollo BBQ",
+        "description": "BBQ chicken, red onion, smoky sauce.",
+        "price": 10.8,
+        "category": "meat",
+        "available": true,
+        "size": "34cm",
+        "spice": 1,
+        "image": ""
+    },
+    {
+        "id": 5,
+        "title": "Verdura Verde",
+        "description": "Zucchini, bell pepper, olives, pesto.",
+        "price": 8.7,
+        "category": "veggie",
+        "available": true,
+        "size": "30cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 6,
+        "title": "Prosciutto and Funghi",
+        "description": "Ham, mushrooms, mozzarella, tomato sauce.",
+        "price": 9.9,
+        "category": "classic",
+        "available": true,
+        "size": "32cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 7,
+        "title": "Diavola Piccante",
+        "description": "Hot salami, chili flakes, mozzarella.",
+        "price": 10.4,
+        "category": "spicy",
+        "available": true,
+        "size": "32cm",
+        "spice": 3,
+        "image": ""
+    },
+    {
+        "id": 8,
+        "title": "Tonno Mare",
+        "description": "Tuna, red onion, capers, mozzarella.",
+        "price": 10.1,
+        "category": "seafood",
+        "available": false,
+        "size": "30cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 9,
+        "title": "Truffle Bianca",
+        "description": "Cream base, mushrooms, truffle oil.",
+        "price": 11.6,
+        "category": "special",
+        "available": true,
+        "size": "30cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 10,
+        "title": "Caprese Burst",
+        "description": "Cherry tomato, mozzarella pearls, basil.",
+        "price": 8.4,
+        "category": "veggie",
+        "available": true,
+        "size": "28cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 11,
+        "title": "Sicilia Olive",
+        "description": "Black olives, anchovy, tomato sauce.",
+        "price": 9.2,
+        "category": "classic",
+        "available": true,
+        "size": "30cm",
+        "spice": 1,
+        "image": ""
+    },
+    {
+        "id": 12,
+        "title": "Four Seasons",
+        "description": "Ham, mushrooms, artichokes, olives.",
+        "price": 11.0,
+        "category": "classic",
+        "available": true,
+        "size": "34cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 13,
+        "title": "Mediterraneo",
+        "description": "Sun-dried tomato, feta, olives, basil.",
+        "price": 10.0,
+        "category": "veggie",
+        "available": true,
+        "size": "30cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 14,
+        "title": "Carbonara Bianca",
+        "description": "Cream base, bacon, parmesan, pepper.",
+        "price": 11.3,
+        "category": "meat",
+        "available": true,
+        "size": "32cm",
+        "spice": 0,
+        "image": ""
+    },
+    {
+        "id": 15,
+        "title": "Garlic Shrimp",
+        "description": "Shrimp, garlic oil, parsley, mozzarella.",
+        "price": 12.2,
+        "category": "seafood",
+        "available": true,
+        "size": "30cm",
+        "spice": 1,
+        "image": ""
     }
 ]
