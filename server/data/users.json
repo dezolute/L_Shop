@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Lena Moroz",
+    "email": "lena@example.com",
+    "login": "lenamoroz",
+    "phone": "+375291112233",
+    "password": "pizza123",
+    "createdAt": "2026-02-20T18:12:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Ivan Petrov",
+    "email": "ivan@example.com",
+    "login": "petrov.iv",
+    "phone": "+375291224466",
+    "password": "cheese456",
+    "createdAt": "2026-02-22T11:45:00.000Z"
+  }
+]
